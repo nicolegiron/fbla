@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FBLA Airlines</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/schedule.css">
+    <link rel="icon" href="../photos/PlaneLogo.jpg">
+  </head>
+  <body>
+    <script src="../js/master.js"></script>
+
+    <div class="wrapper">
+      <header class="page-header">
+        <nav>
+          <ul class="navBar">
+            <a href="../index.html"><img src="../photos/PANGLOGO.jpg" alt="PANG Logo" class="PANGLOGO"></a>
+            <li class="inNavBar"><a href="../index.html">Home</a></li>
+            <li class="inNavBar"><a href="schedule.html">Flight Schedules</a></li>
+            <li class="inNavBar"><a href="program.html">Frequent Flyer Program</a></li>
+            <li class="inNavBar"><a href="job.html">Apply for a Job</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <p class="mainTitle">Flight Schedules</p>
+        <p class="titleSch" >Enter a destination: </p><br>
+        <form class="form" action="index.html"style="text-align:left;padding-left:20px;" id="form">
+          <select name="origin" id="origin"  class="destination">
+            <option value="none" selected disabled hidden>Origin..</option>
+            <option value="Newark">Newark</option>
+            <option value="New York">New York</option>
+            <option value="Boston">Boston</option>
+            <option value="Philadelphia">Philadelphia</option>
+            <option value="Baltimore">Baltimore</option>
+          </select>
+          <select name="destination"  id="destination"  class="destination">
+            <option value="none" selected disabled hidden>Destination..</option>
+            <option value="Newark">Newark</option>
+            <option value="New York">New York</option>
+            <option value="Boston">Boston</option>
+            <option value="Philadelphia">Philadelphia</option>
+            <option value="Baltimore">Baltimore</option>
+          </select>
+          <button type="button" onClick="reset()" class="reset">reset</button>
+        </form>
+
+
+        <p class="titleSch">Choose a day to view flights: </p><br>
+        <form class="form" style="text-align:center;padding-left:20px;" id="form2">
+          <select id="jumpMonth" class="destination" onchange="month()">
+            <option value="none" selected disabled hidden>Jump to..</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+        </form>
+        <div class="month">
+          <ul>
+            <li><button onclick="back()" class="prev">&#10094;</button></li>
+            <li><button onclick="next()" class="next">&#10095;</button></li>
+            <li id="monthTitle">March</li>
+            <span style="font-size:18px;color:white;" id="year">2020</span>
+          </ul>
+        </div>
+
+        <ul class="weekdays">
+          <li>Su</li>
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+        </ul>
+
+        <ul class="days" id="days">
+          <li><button onclick="myFunction(1)" class="sch">1</button></li>
+          <li><button onclick="myFunction(2)" class="sch">2</button></li>
+          <li><button onclick="myFunction(3)" class="sch">3</button></li>
+          <li><button onclick="myFunction(4)" class="sch">4</button></li>
+          <li><button onclick="myFunction(5)" class="sch">5</button></li>
+          <li><button onclick="myFunction(6)" class="sch">6</button></li>
+          <li><button onclick="myFunction(7)" class="sch">7</button></li>
+          <li><button onclick="myFunction(8)" class="sch">8</button></li>
+          <li><button onclick="myFunction(9)" class="sch">9</button></li>
+          <li><button onclick="myFunction(10)" class="sch">10</button></li>
+          <li><button onclick="myFunction(11)" class="sch">11</button></li>
+          <li><button onclick="myFunction(12)" class="sch">12</button></li>
+          <li><button onclick="myFunction(13)" class="sch">13</button></li>
+          <li><button onclick="myFunction(14)" class="sch">14</button></li>
+          <li><button onclick="myFunction(15)" class="sch">15</button></li>
+          <li><button onclick="myFunction(16)" class="sch">16</button></li>
+          <li><button onclick="myFunction(17)" class="sch">17</button></li>
+          <li><button onclick="myFunction(18)" class="sch">18</button></li>
+          <li><button onclick="myFunction(19)" class="sch">19</button></li>
+          <li><button onclick="myFunction(20)" class="sch">20</button></li>
+          <li><button onclick="myFunction(21)" class="sch">21</button></li>
+          <li><button onclick="myFunction(22)" class="sch">22</button></li>
+          <li><button onclick="myFunction(23)" class="sch">23</button></li>
+          <li><button onclick="myFunction(24)" class="sch">24</button></li>
+          <li><button onclick="myFunction(25)" class="sch">25</button></li>
+          <li><button onclick="myFunction(26)" class="sch">26</button></li>
+          <li><button onclick="myFunction(27)" class="sch">27</button></li>
+          <li><button onclick="myFunction(28)" class="sch">28</button></li>
+          <li><button onclick="myFunction(29)" class="sch">29</button></li>
+          <li><button onclick="myFunction(30)" class="sch">30</button></li>
+          <li><button onclick="myFunction(31)" class="sch">31</button></li>
+        </ul>
+
+        <div>
+          <ul id="list">
+            <li></li>
+          </ul>
+        </div>
+
+        <div id="main">
+        </div>
+
+        <div id="bookFlight">
+        </div>
+      </main>
+
+      <footer class="page-footer">
+        <ul class="footer">
+          <small class="copyright">&copy; Copyright 2020. Nicole Giron & Amar Patel.<br></small>
+          <a class="credit" href="credit.html">Credits</a><br>
+          <a href="https://www.facebook.com/"target="_blank"><img src="../socialMedia/facebook.png" alt="facebook icon" class="icons"></a>
+          <a href="https://www.instagram.com/"target="_blank"><img src="../socialMedia/instagram.png" alt="instagram icon" class="icons"></a>
+          <a href="https://www.twitter.com/"target="_blank"><img src="../socialMedia/twitter.png" alt="linkedin icon" class="icons"></a>
+        </ul>
+      </footer>
+    </div>
+
+  </body>
+</html>

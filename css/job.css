@@ -1,0 +1,213 @@
+body, html {
+  height: 100%;
+}
+
+.page-main{
+  background-color: #F3F3F3;
+}
+
+.opening{
+  font-size: 25px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pilot {
+  background-image: url('../photos/pilot.jpg');
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+}
+
+
+.attendant {
+  background-image: url('../photos/attendant.jpg');
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.baggage {
+  background-image: url('../photos/baggage.jpg');
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.mechanic {
+  background-image: url('../photos/mechanic.jpg');
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.jobTitle{
+  font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.title2{
+  weight: 25px;
+  padding: 5px;
+  color: #AC9850;
+  margin-top: 50px;
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.jobs{
+  font-size: 20px;
+}
+
+.text{
+  margin-bottom: 80px;
+}
+
+.outer{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid gray;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+form{
+  display: block;
+  text-align: center;
+}
+label{
+  cursor: default;
+}
+.form{
+  padding: 5px 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.form{
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button.form:hover{
+  background-color: #ccc;
+}
+
+input:invalid+span:after {
+  content: '\1F5D9';
+  padding-left: 5px;
+  color: #8b0000;
+}
+
+input:valid+span:after {
+  content: '\2714';
+  padding-left: 5px;
+  color: #009000;
+}
+
+.inLine{
+  padding: 5px 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-flow: row wrap;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 883px) {
+  .title2{
+    font-size: 40px;
+    margin-top: 70px;
+  }
+ .opening, p.jobs{
+   font-size: 20px;
+ }
+ p.jobTitle {
+   font-size: 25px;
+ }
+}
+
+ @media only screen and (max-width: 664px) {
+   .title2{
+     font-size: 35px;
+     margin-top: 80px;
+   }
+   .strips{
+     padding-left: 20px;
+     padding-right: 20px;
+   }
+}
+
+@media only screen and (max-width: 420px){
+  li a {
+    font-size: 15px;
+  }
+  #firstName, #lastName, #birthday, #email, #phoneNumber{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .PANGLOGO{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 276px){
+  li a {
+    font-size: 12px;
+  }
+}
+.insides{
+  background-color: #F3F3F3;
+}

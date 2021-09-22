@@ -1,0 +1,410 @@
+.destination{
+  font-size: 15px;
+  padding: 10px 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.checkDiv{
+  /* display: inline-block; */
+}
+
+input:invalid+span:after {
+  content: '\1F5D9';
+  padding-left: 5px;
+  color: #8b0000;
+}
+
+input:valid+span:after {
+  content: '\2714';
+  padding-left: 5px;
+  color: #009000;
+}
+
+.reset{
+  font-size: 15px;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background-color: white;
+}
+
+.reset:hover{
+  color: #AC9850;
+}
+
+option{
+  position: absolute;
+  border: 2px solid black;
+ top: 100%;
+ left: 0;
+ right: 0;
+ z-index: 99;
+}
+
+.jump{
+  padding: 5px 5px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bookForm{
+  display: block;
+  padding: 5px 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-flow: row wrap;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.bookForm2{
+  padding: 5px 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-flow: row wrap;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.sch{
+  color: #666;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+li .sch:hover {
+  color: black;
+  font-weight: 900;
+}
+
+ul {list-style-type: none;}
+
+/* Month header */
+.month {
+  padding: 30px 25px;
+  background: black;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  font-size: 30px;
+  float: left;
+  padding-top: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+/* Next button */
+.month .next {
+  font-size: 30px;
+  float: right;
+  padding-top: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size:30px;
+  color: #777;
+}
+
+.outer{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid gray;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#list{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.titleSch{
+  margin-top: 30px;
+  font-size: 35px;
+  font-weight: 540;
+  text-align:left;
+  padding-left:20px;
+  color: #AC9850;
+}
+
+.mainTitle{
+  padding: 9px;
+  margin-top: 40px;
+  color: #AC9850;
+  font-size: 60px;
+  letter-spacing: 5px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.row{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 1px solid gray;
+  padding: 20px;
+  background: #ddd;
+  box-sizing: border-box;
+}
+
+.column{
+  text-align: center;
+  float: left;
+  width: 16.6%;
+}
+
+.column2{
+  text-align: center;
+  float: left;
+  width: 12.5%;
+}
+
+.button{
+  padding: 11px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  outline: none;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+p.inTable, button.button{
+  height: 35px;
+  font-size: 2vh;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#column5{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.h3Title{
+  margin-bottom: 40px;
+}
+
+.h3Title2{
+  margin-bottom: 30px;
+}
+
+.priceTitle{
+  margin-bottom: 11px;
+}
+
+.button:hover{
+  background-color: grey;
+  color: white;
+}
+
+p{
+  font-size: 20px;
+}
+
+.h3Title2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#submit{
+  cursor: pointer;
+}
+
+#submit:hover{
+  background-color: #ccc;
+}
+
+.success{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form{
+  padding-bottom: 40px;
+}
+
+.title{
+  font-size: 23px;
+}
+
+.insides{
+  background-color: #F3F3F3;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mainTitle{
+    font-size: 50px;
+  }
+  .titleSch, .title{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 883px) {
+ .mainTitle{
+   font-size: 40px;
+ }
+}
+
+@media only screen and (max-width: 827px) {
+ .h3Title, .priceTitle, .h3Title2, .inTable, .button{
+   font-size: 20px;
+ }
+ .priceTitle{
+   margin-bottom: 15px;
+ }
+}
+
+@media only screen and (max-width: 718px) {
+ .h3Title, .priceTitle, .h3Title2, .inTable, .button{
+   font-size: 18px;
+ }
+}
+
+ @media only screen and (max-width: 664px) {
+   .mainTitle{
+     font-size: 40px;
+   }
+   .h3Title, .priceTitle, .h3Title2, .inTable, .button{
+     font-size: 15px;
+   }
+}
+
+@media only screen and (max-width: 585px) {
+  .mainTitle{
+    margin-top: 65px;
+  }
+  .titleSch{
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  .mainTitle{
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .days li {
+    width: 13%;
+  }
+  .weekdays li {
+    width: 13%;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  li a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .PANGLOGO{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 282px) {
+  .days li {
+    width: 12%;
+  }
+  .weekdays li {
+    width: 12%;
+  }
+  .mainTitle{
+    margin-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 276px){
+  li a {
+    font-size: 12px;
+  }
+}

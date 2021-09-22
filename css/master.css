@@ -1,0 +1,306 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#body{
+  overflow: hidden;
+}
+
+body{
+  margin-top: 500;
+  padding-top: 190px;
+  display: flex;
+  flex-direction: column;
+}
+
+.centered {
+  width: 100%;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0D0C11;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.inNavBar {
+  float: left;
+  width: 25%;
+  -webkit-text-size-adjust: 100%;
+}
+
+li a {
+  font-size: 19px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #BDA85A;
+}
+
+.PANGLOGO{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 140px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.icons{
+  padding-top: 15px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.page-footer{
+  padding-top: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100px;
+  background-color: #0D0C11;
+  color: white;
+}
+
+.credit{
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 468px) {
+ .page-footer{
+   padding-bottom: 30px;
+ }
+}
+@media only screen and (max-width: 268px) {
+ .page-footer{
+   padding-bottom: 60px;
+ }
+}
+
+.background{
+  width: 100%;
+}
+
+.container{
+  cursor: default;
+  text-align: center;
+  width: 100%;
+}
+
+.constainer span{
+  text-transform: uppercase;
+}
+
+.text1{
+  font-size: 65px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  animation: text 2s 1;
+}
+
+.text2{
+  margin-top: 5px;
+  display:none;
+  display: block;
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  animation: example 2s 1;
+}
+
+@keyframes text {
+  0%{
+    opacity: 0.0;
+    margin-bottom: -40px;
+  }
+  30%{
+    opacity: 1.0;
+    letter-spacing: 13px;
+    margin-bottom: -40px;
+  }
+  85%{
+    opacity: 1.0;
+    letter-spacing: 5px;
+    margin-bottom: -40px;
+  }
+}
+
+@keyframes example {
+  0%{
+    opacity: 0.0;
+    margin-top: -10px;
+  }
+  20%{
+    opacity: 0.0;
+  }
+  25%{
+    opacity: 0.0;
+    display:none;
+    margin-top: -20px;
+  }
+  90%{
+    opacity: 1.0;
+    margin-top: 5px;
+  }
+}
+
+p{
+  text-align:center;
+}
+
+.aboutPang{
+  color: #AC9850;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+
+.aboutPangP{
+  font-size: 20px;
+}
+
+.about{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title{
+  padding-top: 50px;
+  color: #AC9850;
+}
+
+.aboutPangAnimation{
+  color: #AC9850;
+  font-size: 30px;
+  animation: fadeIn 3s 1;
+}
+
+
+@media only screen and (max-width: 883px) {
+  .centered {
+    top: 32%;
+  }
+ .text1{
+   font-size: 40px;
+ }
+ .text2{
+   font-size: 30px;
+ }
+}
+
+ @media only screen and (max-width: 664px) {
+   .centered {
+     top: 32%;
+   }
+  .text1{
+    font-size: 35px;
+  }
+  .text2{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  .centered{
+    padding-top: 20px;
+  }
+ .text1{
+   font-size: 28px;
+ }
+ .text2{
+   font-size: 18px;
+ }
+ .about{
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+}
+
+@media only screen and (max-width: 664px) {
+  .page-footer, .credit{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .page-footer, .credit{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .page-footer, .credit{
+    font-size: 15px;
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0.0;
+    margin-top: 40px;
+  }
+  100%{
+    opacity: 1.0;
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  li a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 382px){
+  /* .centered{
+    padding-top: 5px;
+  } */
+  .text1{
+    font-size: 20px;
+  }
+  .text2{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .PANGLOGO{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 276px){
+  li a {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FBLA Airlines</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/job.css">
+    <link rel="icon" href="../photos/PlaneLogo.jpg">
+  </head>
+  <body>
+    <script src="../js/job.js"></script>
+
+    <div class="wrapper">
+      <header class="page-header">
+        <nav>
+          <ul class="navBar">
+            <a href="../index.html"><img src="../photos/PANGLOGO.jpg" alt="PANG Logo" class="PANGLOGO"></a>
+            <li class="inNavBar"><a href="../index.html">Home</a></li>
+            <li class="inNavBar"><a href="schedule.html">Flight Schedules</a></li>
+            <li class="inNavBar"><a href="program.html">Frequent Flyer Program</a></li>
+            <li class="inNavBar"><a href="job.html">Apply for a Job</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page-main" >
+        <div class="insides" id = "insides">
+          <p class="title2">Apply for a Job</p>
+          <p class="opening">PANG Airlines open it door to anyone who is looking for a job and is qualified.<br><br> Some jobs that someone may apply for are pilots, flight attendants, baggage handler, and mechanics. Each of theses job have their own criteria that someone must meet in order to get the job.</p>
+
+          <div class="pilot"><br></div>
+          <div class="strips">
+            <p class="jobTitle">Pilot Requirements</p>
+            <div class="text">
+              <p class="jobs">Must have flight experience.</p><br>
+              <p class="jobs">Must have a flying licence and certification.</p><br>
+              <p class="jobs">A degree is not necessary but is recommended.</p>
+            </div>
+          </div>
+
+          <div class="attendant"></div>
+          <div class="strips">
+            <p class="jobTitle">Flight Attendant Requirements</p>
+            <div class="text">
+              <p class="jobs">Must have at least a high school diploma</p><br>
+              <p class="jobs">Must complete training and gain a certification through the Federal Aviation Administration or National Transportation Safety Board</p><br>
+              <p class="jobs">Must get a physical and mental body check</p>
+            </div>
+          </div>
+
+          <div class="baggage"></div>
+          <div class="strips">
+            <p class="jobTitle">Baggage Handler Requirements</p>
+            <div class="text">
+              <p class="jobs">Must be at least 18 years old</p><br>
+              <p class="jobs">Must have at least a high school diploma</p><br>
+              <p class="jobs">Must have a valid drivers license</p><br>
+              <p class="jobs">Must get a physical check</p>
+            </div>
+          </div>
+
+          <div class="mechanic"></div>
+          <div class="strips">
+            <p class="jobTitle">Mechanic Requirements</p>
+            <div class="text">
+              <p class="jobs">FAA-approved training program or relevant work experience</p><br>
+              <p class="jobs">FAA certification</p><br>
+              <p class="jobs">Must have a degree in aeronautical engineering</p>
+            </div>
+          </div>
+
+          <p class="opening">If all requirements are met, enter your contact information and someone will be in touch.</p>
+          <div class="outer" id="outer">
+            <form class="" action="index.html" method="post">
+              <label>First Name:</label>
+              <input type="text" class="form"id="firstName">
+              <label>Last Name:</label>
+              <input type="text" class="form" id="lastName">
+              <label>Birthday:</label>
+              <input type="date" class="form" id="birthday">
+
+              <label>Email:</label>
+              <div class="">
+                <input type="email" class="inLine" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <span class="validity"></span></br>
+              </div>
+
+              <label>Phone Number:</label>
+              <div class="">
+                <input type="tel" class="inLine" id="phoneNumber" required pattern="[0-9]{10}">
+                <span class="validity"></span>
+              </div>
+
+
+              <button type="button" class="form" id="form" onclick="formFunction()">Submit</button>
+            </form>
+          </div>
+          <div class="successAgain" id="successAgain"></div>
+        </div>
+      </main>
+
+      <footer class="page-footer">
+        <ul class="footer">
+          <small class="copyright">&copy; Copyright 2020. Nicole Giron & Amar Patel.<br></small>
+          <a class="credit" href="credit.html">Credits</a><br>
+          <a href="https://www.facebook.com/"target="_blank"><img src="../socialMedia/facebook.png" alt="facebook icon" class="icons"></a>
+          <a href="https://www.instagram.com/"target="_blank"><img src="../socialMedia/instagram.png" alt="instagram icon" class="icons"></a>
+          <a href="https://www.twitter.com/"target="_blank"><img src="../socialMedia/twitter.png" alt="linkedin icon" class="icons"></a><br><br>
+        </ul>
+      </footer>
+    </div>
+
+  </body>
+</html>
